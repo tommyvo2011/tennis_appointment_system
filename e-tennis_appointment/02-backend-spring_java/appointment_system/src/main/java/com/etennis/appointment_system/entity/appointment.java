@@ -1,7 +1,7 @@
 package com.etennis.appointment_system.entity;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
+
+import java.util.Date;
 import java.util.Set;
 
 import org.hibernate.mapping.OneToMany;
@@ -21,7 +21,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name="appointment")
+@Table(name="appointment", schema = "public")
 @Data
 @Getter
 @Setter
@@ -32,10 +32,10 @@ public class appointment {
     private long id;
 
     @Column(name="initial_date")
-    private LocalDate initial_date;
+    private Date initial_date;
 
     @Column(name="due_date")
-    private LocalDate due_date;
+    private Date due_date;
 
     @Column(name="number_of_racquets")
     private int number_of_racquets;

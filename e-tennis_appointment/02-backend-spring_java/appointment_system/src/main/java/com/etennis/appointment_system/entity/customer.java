@@ -16,7 +16,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name="customer")
+@Table(name="customer", schema = "public")
 @Data
 @Getter
 @Setter
