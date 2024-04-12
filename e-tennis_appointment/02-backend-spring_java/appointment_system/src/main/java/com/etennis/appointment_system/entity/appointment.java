@@ -2,12 +2,7 @@ package com.etennis.appointment_system.entity;
 
 
 import java.util.Date;
-import java.util.Set;
 
-import org.hibernate.mapping.OneToMany;
-
-import jakarta.annotation.Generated;
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -21,7 +16,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name="appointment", schema = "public")
+@Table(name="appointment")
 @Data
 @Getter
 @Setter

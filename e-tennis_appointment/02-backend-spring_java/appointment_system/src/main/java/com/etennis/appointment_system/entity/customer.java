@@ -9,6 +9,7 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -16,7 +17,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name="customer", schema = "public")
+@Table(name="customer")
 @Data
 @Getter
 @Setter
@@ -27,10 +28,10 @@ public class customer {
     @Column(name="customer_id")
     private Long c_id;
 
-    @Column(name="first_name")
+    @Column(name="f_name")
     private String f_name;
 
-    @Column(name="last_name")
+    @Column(name="l_name") 
     private String l_name;
 
     @Column(name="phone_number")
